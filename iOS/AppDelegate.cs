@@ -5,6 +5,8 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using TipCalc.Core;
+
 namespace TipCalc.iOS
 {
 	[Register ("AppDelegate")]

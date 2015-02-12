@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalc", "TipCalc\TipCalc.csproj", "{03F3FDAB-A9E0-42CB-A2E3-E845E398F7ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalc.Core", "TipCalc\TipCalc.Core.csproj", "{03F3FDAB-A9E0-42CB-A2E3-E845E398F7ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalc.iOS", "iOS\TipCalc.iOS.csproj", "{5813FF95-CDFE-491A-BF06-70719D552C4D}"
 EndProject

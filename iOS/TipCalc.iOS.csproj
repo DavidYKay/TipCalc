@@ -102,9 +102,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TipCalc\TipCalc.csproj">
+    <ProjectReference Include="..\TipCalc\TipCalc.Core.csproj">
       <Project>{03F3FDAB-A9E0-42CB-A2E3-E845E398F7ED}</Project>
-      <Name>TipCalc</Name>
+      <Name>TipCalc.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
