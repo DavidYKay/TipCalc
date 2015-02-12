@@ -20,10 +20,6 @@ namespace TipCalc.Droid
 	[Activity (Label = "Tip", MainLauncher=true)]			
 	public class TipCalcView : MvxActivity
 	{
-		// protected override void OnCreate (Bundle bundle)
-		// {
-		// 	base.OnCreate (bundle);
-		// }
 
         public new TipViewModel ViewModel
         {

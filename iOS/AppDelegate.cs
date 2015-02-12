@@ -9,6 +9,7 @@ using Cirrious.MvvmCross.Touch.Views.Presenters;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross;
 using Cirrious.CrossCore.IoC;
+using Cirrious.CrossCore;
 
 namespace TipCalc.UI.Touch
 {
@@ -26,8 +27,8 @@ namespace TipCalc.UI.Touch
 			var setup = new Setup(this, presenter);
 			setup.Initialize();
 
-//			var startup = Mvx.Resolve<IMvxAppStart>();
-//			startup.Start();
+			var startup = Mvx.Resolve<IMvxAppStart>();
+			startup.Start();
 
 			window.MakeKeyAndVisible();
 
@@ -35,3 +36,4 @@ namespace TipCalc.UI.Touch
 		}
 	}
 }
+
