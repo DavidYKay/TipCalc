@@ -4,22 +4,34 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Cirrious.MvvmCross.Touch.Platform;
+using Cirrious.MvvmCross.Touch.Views.Presenters;
+using Cirrious.MvvmCross.ViewModels;
+using Cirrious.MvvmCross;
+using Cirrious.CrossCore.IoC;
 
-using TipCalc.Core;
-
-namespace TipCalc.iOS
+namespace TipCalc.UI.Touch
 {
-	[Register ("AppDelegate")]
-	public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
+	[Register("AppDelegate")]
+	public partial class AppDelegate : MvxApplicationDelegate
 	{
-		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
+		UIWindow window;
+
+		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			global::Xamarin.Forms.Forms.Init ();
+			window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-			LoadApplication (new App ());
+			var presenter = new MvxTouchViewPresenter(this, window);
 
-			return base.FinishedLaunching (app, options);
+			var setup = new Setup(this, presenter);
+			setup.Initialize();
+
+//			var startup = Mvx.Resolve<IMvxAppStart>();
+//			startup.Start();
+
+			window.MakeKeyAndVisible();
+
+			return true;
 		}
 	}
 }
-

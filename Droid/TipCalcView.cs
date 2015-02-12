@@ -12,7 +12,7 @@ using Android.Views;
 using Android.Widget;
 
 using Cirrious.MvvmCross.Droid.Views;
-; using TipCalc.Core;
+using TipCalc.Core;
 using TipCalc.Core.ViewModels;
 
 namespace TipCalc.Droid
